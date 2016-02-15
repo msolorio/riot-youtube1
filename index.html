@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Riot JS Demo Video</title>
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+	<h1>Let's Learn Riot!</h1>
+  
+  <!-- custom tag in body -->
+	<hello-world greet="Sally"></hello-world>
+	<hello-world greet="Susan"></hello-world>
+	<hello-world></hello-world>
+
+	<hello-form></hello-form>
+	
+	<!-- riot library -->
+  <script src="bower_components/riot/riot.min.js"></script>
+
+  <!-- load compiled js file -->
+  <script src="tags/all.js"></script>
+
+	<!-- riot.mount call -->
+  <script>
+  	riot.mount('hello-world', {greet:'Joe'});
+  	riot.mount('hello-form')
+  </script>
+</body>
+
+</html>
